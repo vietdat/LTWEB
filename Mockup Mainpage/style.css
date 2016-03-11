@@ -17,9 +17,22 @@ div.logo{
   background-color: #F0F0F0;
 }
 .room{
+  font-style: italic;
+  font-family: Cabin,serif;
   margin-top: 50px;
   padding-top: 25px;
   border-top: solid 3px #F0F0F0;
+}
+.menu a{
+  font-size: 1.5em;
+}
+.menu ul{
+  margin-top: 50px;
+  text-align: center;
+}
+.menu li{
+  margin: 15px;
+  display: inline;
 }
 div.page-footer{
   height: 50px;
@@ -106,4 +119,18 @@ div.page-footer{
 .navigation ul li:last-child a:hover {
   -webkit-border-radius: 0 0 5px 5px;
   border-radius: 0 0 5px 5px;
+}
+#item1 ,#item2, #item3, #item4{
+  height: 360px;
+  width: 100%;
+}
+@media screen and (min-width: 768px){
+  #item1 ,#item2, #item3, #item4{
+    height: 480px;
+    width: 100%;
+  }
+  .menu li{
+    margin: 50px;
+  }
+
 }

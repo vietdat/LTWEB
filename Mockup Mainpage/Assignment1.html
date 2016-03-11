@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css" type="text/css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" type="text/css">
+  <script src="bootstrap/js/bootstrap.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
@@ -19,10 +21,25 @@
       if($(this).val().length == 0)
         $(this).parent('label').removeClass('active');
       });
+      var lastScrollTop = 0;
+      $(window).scroll(function(event){
+         var st = $(this).scrollTop();
+         if (st > lastScrollTop){
+           $(document).ready(function(){
+        $("#header").slideUp("fast");
+        });
+         } else {
+             $(document).ready(function(){
+        $("#header").slideDown("fast");
+        });
+         }
+         lastScrollTop = st;
+      });
   </script>
-  <div class="page-header">
+  <img src="img/bg.jpg" alt="NoLoading" style="width:100%;height:100%;position:fixed; z-index:-20; margin-top:0;top:0">
+  <div id="header" class="page-header">
     <div class="logo">
-      <img src="logo.png" alt="No Loading" width="50px" height="50px"><span style="font-weight:bold"> BKSOFT</span>
+      <img src="logo.png" alt="No Loading" width="50" height="50"><span style="font-weight:bold"> BKSOFT</span>
       <div class="btn-group" style="float:right;margin-top:10px;">
        <button type="button" class="btn "><span class="glyphicon glyphicon-search"></span></button>
        <button type="button" class="btn "><span class="glyphicon glyphicon-shopping-cart"></span> <span class="badge" style="font-size:5pt">0</span></button>
@@ -62,7 +79,7 @@
       <div class="carousel-inner" role="listbox">
 
         <div class="item active">
-          <img src="logo.png" alt="Chania" style="width:50%; height:360px;">
+          <img src="img/room4.jpg" alt="Chania" id="item1">
           <div class="carousel-caption" style="color:red">
             <h2>BKHCM</h2>
             <p>ĐẠI HỌC BÁCH KHOA TP.HCM</p>
@@ -70,15 +87,15 @@
         </div>
 
         <div class="item">
-          <img src="img/room1.jpg" alt="Chania" style="width:100%; height:360px;">
+          <img  src="img/room1.jpg" alt="Chania"  id="item2">
           <div class="carousel-caption">
             <h3>Chania</h3>
             <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
           </div>
         </div>
 
-        <div class="item">
-          <img src="img/room2.jpg" alt="Chania" style="width:100%; height:360px;">
+        <div  class="item">
+          <img src="img/room2.jpg" alt="Chania" id="item3">
           <div class="carousel-caption">
             <h3>Flowers</h3>
             <p>Beatiful flowers in Kolymbari, Crete.</p>
@@ -86,7 +103,7 @@
         </div>
 
         <div class="item">
-          <img src="img/room3.jpg" alt="Chania" style="width:100%; height:360px;">
+          <img src="img/room3.jpg" alt="Chania" id="item4">
           <div class="carousel-caption">
             <h3>Flowers</h3>
             <p>Beatiful flowers in Kolymbari, Crete.</p>
@@ -104,25 +121,53 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
-    <div class="room">
-      <div>
-        <h1> Rooms</h1>
-        <a href="#" style="text-align:right">Show All</a>
-      </div>
-      <img src="img/room1.jpg" alt="No Loading" width="280px" height="150px">
-      <img src="img/room2.jpg" alt="No Loading" width="280px" height="150px">
-      <img src="img/room3.jpg" alt="No Loading" width="280px" height="150px">
-      <img src="img/room4.jpg" alt="No Loading" width="280px" height="150px">
+    <div class="menu">
+      <ul>
+        <li><a href="#newproduct">New Product</a></li>
+        <li><a href="#topproduct">Top Product</a></li>
+        <li><a href="#rooms">Room</a></li>
+        <li><a href="#product">Product</a></li>
+      </ul>
     </div>
-    <div class="room">
+    <div class="room" id="newproduct">
       <div>
-        <h1> Products</h1>
+        <h1>New Product</h1>
         <a href="#" style="text-align:right">Show All</a>
       </div>
-      <img src="img/room1.jpg" alt="No Loading" width="280px" height="150px">
-      <img src="img/room2.jpg" alt="No Loading" width="280px" height="150px">
-      <img src="img/room3.jpg" alt="No Loading" width="280px" height="150px">
-      <img src="img/room4.jpg" alt="No Loading" width="280px" height="150px">
+      <a href="#Product"><img src="img/room1.jpg" alt="No Loading" width="280" height="150"></a>
+      <img src="img/room2.jpg" alt="No Loading" width="280" height="150">
+      <img src="img/room3.jpg" alt="No Loading" width="280" height="150">
+      <img src="img/room4.jpg" alt="No Loading" width="280" height="150">
+    </div>
+    <div class="room" id="topproduct">
+      <div>
+        <h1>Top Product</h1>
+        <a href="#" style="text-align:right">Show All</a>
+      </div>
+      <img src="img/room1.jpg" alt="No Loading" width="280" height="150">
+      <img src="img/room2.jpg" alt="No Loading" width="280" height="150">
+      <img src="img/room3.jpg" alt="No Loading" width="280" height="150">
+      <img src="img/room4.jpg" alt="No Loading" width="280" height="150">
+    </div>
+    <div class="room" id="rooms">
+      <div>
+        <h1>Room</h1>
+        <a href="#" style="text-align:right">Show All</a>
+      </div>
+      <img src="img/room1.jpg" alt="No Loading" width="280" height="150">
+      <img src="img/room2.jpg" alt="No Loading" width="280" height="150">
+      <img src="img/room3.jpg" alt="No Loading" width="280" height="150">
+      <img src="img/room4.jpg" alt="No Loading" width="280" height="150">
+    </div>
+    <div class="room" id="product">
+      <div>
+        <h1>Product</h1>
+        <a href="#" style="text-align:right">Show All</a>
+      </div>
+      <img src="img/room1.jpg" alt="No Loading" width="280" height="150">
+      <img src="img/room2.jpg" alt="No Loading" width="280" height="150">
+      <img src="img/room3.jpg" alt="No Loading" width="280" height="150">
+      <img src="img/room4.jpg" alt="No Loading" width="280" height="150">
     </div>
   </div>
   <div class="page-footer">
@@ -138,5 +183,6 @@
       </div>
     </div>
   </div>
+
 </body>
 </html>
