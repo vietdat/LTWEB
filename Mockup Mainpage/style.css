@@ -1,3 +1,8 @@
+body{
+  font-family: "Segoe UI Webfont","Helvetica Neue","Lucida Grande","Roboto","Ebrima","Nirmala UI","Gadugi","Segoe Xbox Symbol","Segoe UI Symbol","Meiryo UI","Khmer UI",
+  "Tunga","Lao UI","Raavi","Iskoola Pota","Latha","Leelawadee","Microsoft YaHei UI","Microsoft JhengHei UI","Malgun Gothic","Estrangelo Edessa",
+  "Microsoft Himalaya","Microsoft New Tai Lue","Microsoft PhagsPa","Microsoft Tai Le","Microsoft Yi Baiti","Mongolian Baiti","MV Boli","Myanmar Text","Cambria Math";
+}
 div.page-header{
   margin-top:0;
   margin-bottom: 0;
@@ -8,6 +13,9 @@ div.page-header{
   left: 0;
   background-color: #2F2F2F;
   z-index: 50;
+}
+.btn{
+  background-color: #F0F0F0;
 }
 #item1, #item2,#item3, #item4{
   height: 180px;
@@ -40,12 +48,6 @@ div.logo{
   margin: 3px;
   font-size: 0.75em;
   display: inline;
-}
-div.page-footer{
-  height: 50px;
-  line-height: 50px;
-  margin-bottom: 0px;
-  background-color: #CCCCCC;
 }
 .btn:hover{
   background: #E8E8E8;
@@ -130,7 +132,7 @@ div.page-footer{
 .side{
   margin-bottom: 30px;
 }
-@media screen and (min-width: 375px){
+@media screen and (min-width: 360px){
   .menu{
     margin-top: 20px;
   }
@@ -167,7 +169,6 @@ div.page-footer{
     width: 100%;
   }
   .menu li{
-    font-family: fantasy;
     font-style: italic;
     margin: 30px;
     font-size: 1.5em;

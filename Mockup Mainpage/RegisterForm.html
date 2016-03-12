@@ -1,0 +1,94 @@
+<!doctype html>
+<head>
+  <title> SIGN UP</title>
+  <link rel="shortcut icon" href="logo.png"/>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="formpage.css" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <script>
+    function linkTo(location){
+      window.location = location;
+    }
+  </script>
+  <div class="container" id="register">
+    <h2>Create an account</h2>
+    <span>If you have account</span> <a href="LoginForm.html">Sign in Now!</a>
+    <form>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="form-group">
+            <label for="lname">Lastname</label>
+            <input type="text" class="form-control" id="lname">
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="form-group">
+            <label for="fname">Firstname</label>
+            <input type="text" class="form-control" id="fname">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="form-group">
+            <label for="dob">Day of Birth</label>
+            <select class="form-control" id="dob">
+              <option>26</option>
+              <option>27</option>
+              <option>28</option>
+              <option>29</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="form-group">
+            <label for="mob">Month</label>
+            <select class="form-control" id="mob">
+              <option>Jun</option>
+              <option>Jul</option>
+              <option>Aug</option>
+              <option>Sep</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="form-group">
+            <label for="yob">Year</label>
+            <select class="form-control" id="yob">
+              <option>1994</option>
+              <option>1995</option>
+              <option>1996</option>
+              <option>1997</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email">
+      </div>
+      <div class="form-group">
+        <label for="urs">Username</label>
+        <input type="text" class="form-control" id="urs">
+      </div>
+      <div class="form-group">
+        <label for="pwd">Password</label>
+        <input type="password" class="form-control" id="pwd">
+      </div>
+      <div class="form-group">
+        <label for="repwd">Retype Password</label>
+        <input type="password" class="form-control" id="repwd">
+      </div>
+      <div class="checkbox">
+        <label><input type="checkbox" value="">I agree Term</label>
+      </div>
+      <button class="btn btn-success" onclick="linkTo('Assignment1.html')">Sign up</button>
+    </form>
+  </div>
+</body>
+</html>
