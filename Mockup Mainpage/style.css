@@ -30,10 +30,12 @@ div.logo{
 }
 .room{
   font-style: italic;
-  font-family: Cabin,serif;
   margin-top: 50px;
   padding-top: 25px;
   border-top: solid 3px #F0F0F0;
+}
+.room a{
+  font-weight: bold;
 }
 .menu a{
   font-size: 1em;
