@@ -154,6 +154,9 @@ div.logo{
     margin-left: 10px;
     font-size: 1.2em;
   }
+  .side{
+    margin-left: 30px;
+  }
 }
 @media screen and (min-width:768px){
   .side{
@@ -178,5 +181,8 @@ div.logo{
   .side{
     margin-right: 10px;
     margin-bottom: 20px;
+  }
+  .side{
+    width: 250px;
   }
 }
