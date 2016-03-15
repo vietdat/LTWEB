@@ -134,15 +134,15 @@ div.logo{
 .side{
   margin-bottom: 30px;
 }
-@media screen and (min-width: 360px){
+@media screen and (min-width: 375px){
   .menu{
     margin-top: 20px;
   }
   .menu li{
     font-size: 1em;
   }
-  .room{
-    margin-left: 35px;
+  .side{
+    margin-left: 30px;
   }
 }
 @media screen and (min-width: 425px){
@@ -155,13 +155,14 @@ div.logo{
     font-size: 1.2em;
   }
   .side{
-    margin-left: 30px;
+    margin-left: 60px;
   }
 }
 @media screen and (min-width:768px){
   .side{
-    margin-right: 60px;
+    margin-right: 20px;
     margin-bottom: 60px;
+    width: 250px;
   }
   #item1, #item2,#item3, #item4{
     height: 280px;
@@ -179,10 +180,11 @@ div.logo{
     font-size: 1.5em;
   }
   .side{
-    margin-right: 10px;
+    margin-right: 0;
+    margin-left: 30px;
     margin-bottom: 20px;
   }
   .side{
-    width: 250px;
+    width: 200px;
   }
 }
