@@ -18,7 +18,7 @@ div.page-header{
   background-color: #F0F0F0;
 }
 #item1, #item2,#item3, #item4{
-  height: 180px;
+  height: auto;
   width: 100%;
 }
 div.container{
@@ -131,18 +131,13 @@ div.logo{
   -webkit-border-radius: 0 0 5px 5px;
   border-radius: 0 0 5px 5px;
 }
-.side{
-  margin-bottom: 30px;
-}
+
 @media screen and (min-width: 375px){
   .menu{
     margin-top: 20px;
   }
   .menu li{
     font-size: 1em;
-  }
-  .side{
-    margin-left: 30px;
   }
 }
 @media screen and (min-width: 425px){
@@ -154,37 +149,14 @@ div.logo{
     margin-left: 10px;
     font-size: 1.2em;
   }
-  .side{
-    margin-left: 60px;
-  }
 }
 @media screen and (min-width:768px){
-  .side{
-    margin-right: 20px;
-    margin-bottom: 60px;
-    width: 250px;
-  }
-  #item1, #item2,#item3, #item4{
-    height: 280px;
-    width: 100%;
-  }
+
 }
 @media screen and (min-width:1024px){
-  #item1, #item2,#item3, #item4{
-    height: 380px;
-    width: 100%;
-  }
   .menu li{
     font-style: italic;
     margin: 30px;
     font-size: 1.5em;
-  }
-  .side{
-    margin-right: 0;
-    margin-left: 30px;
-    margin-bottom: 20px;
-  }
-  .side{
-    width: 200px;
   }
 }
