@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="shortcut icon" href="logo.png"/>
+  <title>Show all</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <link rel="stylesheet" type="text/css" href="showall.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <script>
+    function linkTo(location){
+      window.location = location;
+    }
+      var lastScrollTop = 0;
+      $(window).scroll(function(event){
+         var st = $(this).scrollTop();
+         if (st > lastScrollTop){
+           $(document).ready(function(){
+        $("#header").slideUp("fast");
+        });
+         } else {
+             $(document).ready(function(){
+        $("#header").slideDown("fast");
+        });
+         }
+         lastScrollTop = st;
+      });
+  </script>
+
+  <img src="img/bg.jpg" alt="NoLoading" style="width:100%;height:100%;position:fixed; z-index:-20; margin-top:0;top:0">
+
+  <div id="header" class="page-header">
+    <div class="logo">
+      <img id="logo" src="logo.png" alt="No Loading" width="50" height="50"><span style="font-weight:bold"> BKSOFT</span>
+      <div class="btn-group" style="float:right;margin-top:10px;" id="btngroup">
+         <button type="button" class="btn " data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-search"></span></button>
+         <button type="button" class="btn "><span class="glyphicon glyphicon-shopping-cart"></span> <span class="badge" style="font-size:5pt">0</span></button>
+         <button type="button" class="btn "><span class="glyphicon glyphicon-cog"></span></button>
+         <button type="button" class="btn " onclick="linkTo('LoginForm.html')">Sign in</button>
+      </div>
+    </div>
+    <ul class="navigation">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Rooms</a>
+          <ul>
+            <li><a href="#">Living Room</a></li>
+            <li><a href="#">Kitchen</a></li>
+            <li><a href="#">Bedroom</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Product</a>
+          <ul>
+            <li><a href="#">Living Room</a></li>
+            <li><a href="#">Kitchen</a></li>
+            <li><a href="#">Bedroom</a></li>
+          </ul>
+        </li>
+      </ul>
+  </div>
+
+  <div class="container row">
+      <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h2 class="modal-title">Search</h2>
+          </div>
+          <div class="modal-body">
+            <input type="text" style="width:100%; border-radius:5px;">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" onclick="linkTo('resultSearch.html')">OK</button>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="col-md-2 nav">
+          <a href="#"><b>Charts</b></a>
+          <ul>
+            <li onclick="this.classList.add('active')"><a href="#">Top free</a></li>
+            <li onclick="this.classList.add('active')"><a href="#">Top paid</a></li>
+            <li onclick="this.classList.add('active')"><a href="#">Best-rated</a></li>
+            <li onclick="this.classList.add('active')"><a href="#">New and risting</a></li>
+          </ul>
+          <a href="#"><b>Category</b></a>
+          <ul>
+            <li onclick="this.classList.add('active')"><a href="#">ban</a></li>
+            <li onclick="this.classList.add('active')"><a href="#">Ghe</a></li>
+            <li onclick="this.classList.add('active')"><a href="#">Giuong</a></li>
+            <li onclick="this.classList.add('active')"><a href="#">Tu</a></li>
+          </ul>
+      </div>
+      <div class="col-md-10 row">
+            <p>Top fee</p>
+            <div>
+              <div class="col-xs-4 col-md-2">
+                    <img class="image" alt="image" src="img/gift.png" />
+                    <p>Price 10$</p>
+                    <button>Buy now</button>
+                </div>
+                <div class="col-xs-4 col-md-2">
+                    <img class="image" alt="image" src="img/gift.png" />
+                    <p>Price 10$</p>
+                    <button>Buy now</button>
+                </div>
+                <div class="col-xs-4 col-md-2">
+                    <img class="image" alt="image" src="img/gift.png" />
+                    <p>Price 10$</p>
+                    <button>Buy now</button>
+                </div>
+                <div class="col-xs-4 col-md-2">
+                    <img class="image" alt="image" src="img/gift.png" />
+                    <p>Price 10$</p>
+                    <button>Buy now</button>
+                </div>
+                <div class="col-xs-4 col-md-2">
+                    <img class="image" alt="image" src="img/gift.png" />
+                    <p>Price 10$</p>
+                    <button>Buy now</button>
+                </div>
+                <div class="col-xs-4 col-md-2">
+                    <img class="image" alt="image" src="img/gift.png" />
+                    <p>Price 10$</p>
+                    <button>Buy now</button>
+                </div>
+                <div class="col-xs-4 col-md-2">
+                    <img class="image" alt="image" src="img/gift.png" />
+                    <p>Price 10$</p>
+                    <button>Buy now</button>
+                </div>
+                <div class="col-xs-4 col-md-2">
+                    <img class="image" alt="image" src="img/gift.png" />
+                    <p>Price 10$</p>
+                    <button>Buy now</button>
+                </div>
+                <div class="col-xs-4 col-md-2">
+                    <img class="image" alt="image" src="img/gift.png" />
+                    <p>Price 10$</p>
+                    <button>Buy now</button>
+                </div>
+                <div class="col-xs-4 col-md-2">
+                    <img class="image" alt="image" src="img/gift.png" />
+                    <p>Price 10$</p>
+                    <button>Buy now</button>
+                </div>
+                <div class="col-xs-4 col-md-2">
+                    <img class="image" alt="image" src="img/gift.png" />
+                    <p>Price 10$</p>
+                    <button>Buy now</button>
+                </div>
+                <div class="col-xs-4 col-md-2">
+                    <img class="image" alt="image" src="img/gift.png" />
+                    <p>Price 10$</p>
+                    <button>Buy now</button>
+                </div>
+                <div class="col-xs-4 col-md-2">
+                    <img class="image" alt="image" src="img/gift.png" />
+                    <p>Price 10$</p>
+                    <button>Buy now</button>
+                </div>
+                <div class="col-xs-4 col-md-2">
+                    <img class="image" alt="image" src="img/gift.png" />
+                    <p>Price 10$</p>
+                    <button>Buy now</button>
+                </div>
+                <div class="col-xs-4 col-md-2">
+                    <img class="image" alt="image" src="img/gift.png" />
+                    <p>Price 10$</p>
+                    <button>Buy now</button>
+                </div>
+                <div class="col-xs-4 col-md-2">
+                    <img class="image" alt="image" src="img/gift.png" />
+                    <p>Price 10$</p>
+                    <button>Buy now</button>
+                </div>
+                <div class="col-xs-4 col-md-2">
+                    <img class="image" alt="image" src="img/gift.png" />
+                    <p>Price 10$</p>
+                    <button>Buy now</button>
+                </div>
+                <div class="col-xs-4 col-md-2">
+                    <img class="image" alt="image" src="img/gift.png" />
+                    <p>Price 10$</p>
+                    <button>Buy now</button>
+                </div>
+                <div class="col-xs-4 col-md-2">
+                    <img class="image" alt="image" src="img/gift.png" />
+                    <p>Price 10$</p>
+                    <button>Buy now</button>
+                </div>
+                <div class="col-xs-4 col-md-2">
+                    <img class="image" alt="image" src="img/gift.png" />
+                    <p>Price 10$</p>
+                    <button>Buy now</button>
+                </div>
+                <div class="col-xs-4 col-md-2">
+                    <img class="image" alt="image" src="img/gift.png" />
+                    <p>Price 10$</p>
+                    <button>Buy now</button>
+                </div>
+                <div class="col-xs-4 col-md-2">
+                    <img class="image" alt="image" src="img/gift.png" />
+                    <p>Price 10$</p>
+                    <button>Buy now</button>
+                </div>
+                <div class="col-xs-4 col-md-2">
+                    <img class="image" alt="image" src="img/gift.png" />
+                    <p>Price 10$</p>
+                    <button>Buy now</button>
+                </div>
+                <div class="col-xs-4 col-md-2">
+                    <img class="image" alt="image" src="img/gift.png" />
+                    <p>Price 10$</p>
+                    <button>Buy now</button>
+                </div>
+               
+
+                
+                <div id="choosepage" >
+                   <ul class="pagination">
+                       <li onclick="this.classList.add('active');"><a href="#">1</a></li>
+                       <li onclick="this.classList.add('active');"><a href="#">2</a></li>
+                       <li onclick="this.classList.add('active');"><a href="#">3</a></li>
+                       <li onclick="this.classList.add('active');"><a href="#">4</a></li>
+                       <li onclick="this.classList.add('active');"><a href="#">5</a></li>
+                       <li onclick="this.classList.add('active');"><a href="#">></a></li>
+                   </ul>
+                </div>
+          </div>
+      </div>
+  </div>
+    
+  <div class="panel-footer">
+    <div class="row">
+      <div class="col-md-4">
+        <p style="text-align:left;margin:0;">Kuls</p>
+      </div>
+      <div class="col-md-4">
+        <p style="text-align:center;margin:0;">Copyright 2016</p>
+      </div>
+      <div class="col-md-4">
+        <p style="text-align:right;margin:0;">BKSoft 2016</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

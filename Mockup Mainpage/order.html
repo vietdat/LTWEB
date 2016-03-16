@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="shortcut icon" href="logo.png"/>
+  <title>Order</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <link rel="stylesheet" type="text/css" href="order.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <script>
+    function linkTo(location){
+      window.location = location;
+    }
+      var lastScrollTop = 0;
+      $(window).scroll(function(event){
+         var st = $(this).scrollTop();
+         if (st > lastScrollTop){
+           $(document).ready(function(){
+        $("#header").slideUp("fast");
+        });
+         } else {
+             $(document).ready(function(){
+        $("#header").slideDown("fast");
+        });
+         }
+         lastScrollTop = st;
+      });
+  </script>
+
+  <img src="img/bg.jpg" alt="NoLoading" style="width:100%;height:100%;position:fixed; z-index:-20; margin-top:0;top:0">
+
+  <div id="header" class="page-header">
+    <div class="logo">
+      <img id="logo" src="logo.png" alt="No Loading" width="50" height="50"><span style="font-weight:bold"> BKSOFT</span>
+      <div class="btn-group" style="float:right;margin-top:10px;" id="btngroup">
+         <button type="button" class="btn " data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-search"></span></button>
+         <button type="button" class="btn "><span class="glyphicon glyphicon-shopping-cart"></span> <span class="badge" style="font-size:5pt">0</span></button>
+         <button type="button" class="btn "><span class="glyphicon glyphicon-cog"></span></button>
+         <button type="button" class="btn " onclick="linkTo('LoginForm.html')">Sign in</button>
+      </div>
+    </div>
+    <ul class="navigation">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Rooms</a>
+          <ul>
+            <li><a href="#">Living Room</a></li>
+            <li><a href="#">Kitchen</a></li>
+            <li><a href="#">Bedroom</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Product</a>
+          <ul>
+            <li><a href="#">Living Room</a></li>
+            <li><a href="#">Kitchen</a></li>
+            <li><a href="#">Bedroom</a></li>
+          </ul>
+        </li>
+      </ul>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-9">
+        <div class="row">
+          <div class="col-xs-5">
+            <img src="img/gift.png" alt="gift" class="image">
+          </div>
+          <div class="col-xs-7">
+            <label>Ten san pham</label>
+            <p>Chi tiet sp
+            Chi tiet sp
+            Chi tiet sp
+            Chi tiet sp</p>
+            <div>
+              <div class="col-xs-6">
+                <p>10000$</p>
+              </div>
+              <div class="col-xs-6">
+                <select>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+              </select>
+              </div>
+              
+            </div>
+            <div>
+              <button>Xoa</button>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-5">
+            <img src="img/gift.png" alt="gift" class="image">
+          </div>
+          <div class="col-xs-7">
+            <label>Ten san pham</label>
+            <p>Chi tiet sp
+            Chi tiet sp
+            Chi tiet sp
+            Chi tiet sp</p>
+            <div>
+              <div class="col-xs-6">
+                <p>10000$</p>
+              </div>
+              <div class="col-xs-6">
+                <select>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+              </select>
+              </div>
+              
+            </div>
+            <div>
+              <button>Xoa</button>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-5">
+            <img src="img/gift.png" alt="gift" class="image">
+          </div>
+          <div class="col-xs-7">
+            <label>Ten san pham</label>
+            <p>Chi tiet sp
+            Chi tiet sp
+            Chi tiet sp
+            Chi tiet sp</p>
+            <div>
+              <div class="col-xs-6">
+                <p>10000$</p>
+              </div>
+              <div class="col-xs-6">
+                <select>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+              </select>
+              </div>
+              
+            </div>
+            <div>
+              <button>Xoa</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3" >
+        <div class="row" id="tinhtien">
+          
+          <div class="col-xs-6">
+            <p>Thanh tien</p>
+          </div>
+          <div class="col-xs-6">
+            <p>84.000$</p>
+          </div>
+          
+        </div>
+        <div>
+            <button id="thanhtoan">Thanh toan</button>
+        </div>
+        <br>
+        <br>
+        <div>
+          <p>Đơn hàng có thể được giao trong vòng 24 giờ đến các quận nội thành tại TP. Hồ Chí Minh</p>
+          <br>
+          <p>Hotline: 01668708845</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel-footer">
+    <div class="row">
+      <div class="col-md-4">
+        <p style="text-align:left;margin:0;">Kuls</p>
+      </div>
+      <div class="col-md-4">
+        <p style="text-align:center;margin:0;">Copyright 2016</p>
+      </div>
+      <div class="col-md-4">
+        <p style="text-align:right;margin:0;">BKSoft 2016</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
