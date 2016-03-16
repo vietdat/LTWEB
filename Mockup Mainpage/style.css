@@ -3,6 +3,9 @@ body{
   "Tunga","Lao UI","Raavi","Iskoola Pota","Latha","Leelawadee","Microsoft YaHei UI","Microsoft JhengHei UI","Malgun Gothic","Estrangelo Edessa",
   "Microsoft Himalaya","Microsoft New Tai Lue","Microsoft PhagsPa","Microsoft Tai Le","Microsoft Yi Baiti","Mongolian Baiti","MV Boli","Myanmar Text","Cambria Math";
 }
+.room h1{
+  color:#7A797E;
+}
 div.page-header{
   margin-top:0;
   margin-bottom: 0;
