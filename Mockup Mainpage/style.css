@@ -8,6 +8,17 @@ body{
 }
 .room h1{
   color:#7A797E;
+  font-size: 2em;
+}
+.menu{
+  font-family: Lobster;
+}
+.adv{
+  width: 100%;
+  margin-bottom: 50px;
+  background-image: url(img/room2.jpg);
+  background-size: 100% 300px;
+  height: 300px;
 }
 div.page-header{
   margin-top:0;
@@ -24,7 +35,7 @@ div.page-header{
   background-color: #F0F0F0;
 }
 #item1, #item2,#item3, #item4{
-  height: auto;
+  height: 400px;
   width: 100%;
 }
 div.container{
@@ -35,10 +46,11 @@ div.logo{
   background-color: #F0F0F0;
 }
 .room{
-  font-style: italic;
+  font-size: 2em;
+  font-family: Tangerine,serif;
   margin-top: 50px;
   padding-top: 25px;
-  border-top: solid 3px #F0F0F0;
+  border-top: solid 3px #222;
 }
 .room a{
   font-weight: bold;
