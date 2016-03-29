@@ -1,9 +1,4 @@
-.header{
-  width: 100%;
-  z-index: 200;
-  top:0;
-  position: fixed;
-}
+
 .address{
   background-color: #308FCB;
   width: 100%;
@@ -11,6 +6,9 @@
   top:0;
   position: fixed;
   height: 50px;
+}
+#go{
+  background-image: url(img/go.jpg);
 }
 .address p{
   color: white;
@@ -54,10 +52,15 @@
 #sear{
   margin-top: 20px;
 }
+#navi a{
+  color: #FFC800;
+  font-weight: bolder;
+}
 @media screen and (min-width: 1024px){
   #sear{
     float: right;
-    width: 70%;
+    width: 45%;
+    margin-right: 30px;
   }
   .categlory{
     display: none;
