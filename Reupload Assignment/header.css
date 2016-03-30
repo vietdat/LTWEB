@@ -47,8 +47,8 @@
 #Sign{
   background-image: url(img/go.jpg);
   color: white;
-  font-family: time;
-  margin-right: 10px;
+  font-family: cursive;
+  margin-right: 15px;
 }
 #sear{
   margin-top: 20px;
@@ -72,7 +72,7 @@
     margin-right: 30px;
 	margin-top:7px;
 	width: 30%;
-	
+
   }
    #sear{
     float: right;
@@ -103,4 +103,3 @@
 		display: none;
 	}
 }
-

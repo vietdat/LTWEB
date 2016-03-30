@@ -17,13 +17,18 @@
 
 </head>
 <body>
+  <script>
+  function linkTo(location){
+    window.location = location;
+  }
+  </script>
   <div class="page-header">
     <div class="address">
       <div class="sdt">
         <p> Hotline: 1900 8256</p>
       </div>
       <div class="signin">
-        <button class="btn" id="Sign">Đăng nhập</button>
+        <button class="btn" id="Sign" onclick="linkTo('LoginForm.html')">Đăng nhập</button>
       </div>
 	  <div class="input-group" id="searr">
           <span class="input-group-addon">Tìm kiếm</span>
