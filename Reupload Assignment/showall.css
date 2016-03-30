@@ -1,0 +1,52 @@
+.nav{
+	display: none;
+}
+
+.nav li{
+	list-style-type: none;
+}
+
+.image{
+	width : 100%;
+	height: auto;
+}
+
+p{
+	margin: 0px;
+}
+
+button{
+	margin-bottom: 5px;
+}
+
+#choosepage{
+	float: right;
+}
+
+.hovereffect {
+	margin: 3px;
+}
+
+@media screen and (min-width: 480px) {
+	.nav{
+		display: block;
+		margin-left: 10px;
+	}
+	.nav a{
+			color: black;
+		display: block;
+		text-decoration: none;
+	}
+
+	.nav li{
+			width: auto;
+			line-height: 40px;
+			border-bottom: 1px solid #e8e8e8;
+		  	padding: 0 1em;
+	}
+	.nav li:hover{
+		background: #F2F2F2;
+	}
+
+
+}

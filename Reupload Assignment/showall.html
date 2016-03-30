@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="shortcut icon" href="logo.png"/>
+  <title>Show all</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="showall.css">
+  <link rel="stylesheet" type="text/css" href="hover.css">
+  <link rel="stylesheet" href="header.css" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <script>
+    function linkTo(location){
+      window.location = location;
+    }
+  </script>
+  <div class="page-header">
+    <div class="address">
+      <div class="sdt">
+        <p> Hotline: 1900 8256</p>
+      </div>
+      <div class="signin">
+        <button class="btn" id="Sign">Đăng nhập</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-4">
+        <div class="logo">DreamWorld</div>
+        <div class="slogan">MANG LẠI MÁI ẤM TUYỆT VỜI</div>
+      </div>
+      <div class="col-xs-12 col-sm-8">
+        <div class="input-group" id="sear">
+          <span class="input-group-addon">Tìm kiếm</span>
+          <input type="search" class="form-control" placeholder="Bạn muốn tìm những gì?">
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-8">
+        <ul class="nav nav-tabs">
+          <li role="presentation" class="active"><a href="#">Home</a></li>
+          <li role="presentation"><a href="#">Profile</a></li>
+          <li role="presentation"><a href="#">Messages</a></li>
+          <li role="presentation" class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+              Dropdown </a>
+            <ul class="dropdown-menu">
+                <li role="presentation"><a href="#">Messages</a></li>
+                <li role="presentation"><a href="#">Messages</a></li>
+            </ul>
+          </li>
+          <li role="presentation" class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+              Sale </a>
+            <ul class="dropdown-menu">
+                <li role="presentation"><a href="#">Messages</a></li>
+                <li role="presentation"><a href="#">Messages</a></li>
+            </ul>
+          </li>
+          <li role="presentation" class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+              News </a>
+            <ul class="dropdown-menu">
+                <li role="presentation"><a href="#">Messages</a></li>
+                <li role="presentation"><a href="#">Messages</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <nav class="w3-sidenav w3-dark-grey w3-animate-left" style="display:none">
+      <a href="javascript:void(0)" onclick="w3_close()"
+      class="w3-closenav w3-large">Close ×</a>
+      <a href="#">New Product</a>
+      <a href="#">Top Product</a>
+      <a href="#">Room</a>
+      <a href="#">Sale</a>
+      <a href="#">Recoment</a>
+    </nav>
+    <div class="categlory"><span class="glyphicon glyphicon-menu-hamburger" onclick="w3_open()"></span> Danh mục</div>
+    <script>
+      function w3_open() {
+          document.getElementsByClassName("w3-sidenav")[0].style.display = "block";
+      }
+      function w3_close() {
+          document.getElementsByClassName("w3-sidenav")[0].style.display = "none";
+      }
+    </script>
+  </div>
+
+  <div class="container row">
+      <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h2 class="modal-title">Search</h2>
+          </div>
+          <div class="modal-body">
+            <input type="text" style="width:100%; border-radius:5px;">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" onclick="linkTo('resultSearch.html')">OK</button>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="col-md-2 nav">
+          <a href="#"><b>Phòng</b></a>
+          <ul>
+            <li onclick="this.classList.add('active')"><a href="#">Phòng tắm</a></li>
+            <li onclick="this.classList.add('active')"><a href="#">Phòng ăn</a></li>
+            <li onclick="this.classList.add('active')"><a href="#">Phòng khách</a></li>
+            <li onclick="this.classList.add('active')"><a href="#">Phòng ngủ</a></li>
+          </ul>
+          <a href="#"><b>Danh mục sản phẩm</b></a>
+          <ul>
+            <li onclick="this.classList.add('active')"><a href="#">Bàn</a></li>
+            <li onclick="this.classList.add('active')"><a href="#">Ghế</a></li>
+            <li onclick="this.classList.add('active')"><a href="#">Giường</a></li>
+            <li onclick="this.classList.add('active')"><a href="#">Tủ</a></li>
+          </ul>
+      </div>
+      <div class="col-md-10 row">
+            <p>Phòng khách</p>
+            <div>
+              <div class="col-xs-6 col-md-4">
+                    <div class="hovereffect">
+						<img class="img-responsive" src="img/GheSofa.jpg" alt="">
+						<div class="overlay">
+						   <h2>Ghế Sofa</h2>
+						   <a class="info" href="#">Chi tiết</a>
+						</div>
+					</div>
+                </div>
+                <div class="col-xs-6 col-md-4">
+                    <div class="hovereffect">
+						<img class="img-responsive" src="img/GheSofa2.jpg" alt="">
+						<div class="overlay">
+						   <h2>Ghế Sofa</h2>
+						   <a class="info" href="#">Chi tiết</a>
+						</div>
+					</div>
+                </div>
+                <div class="col-xs-6 col-md-4">
+                    <div class="hovereffect">
+						<img class="img-responsive" src="img/GheSofa3.jpg" alt="">
+						<div class="overlay">
+						   <h2>Ghế Sofa</h2>
+						   <a class="info" href="#">Chi tiết</a>
+						</div>
+					</div>
+                </div>
+                <div class="col-xs-6 col-md-4">
+                    <div class="hovereffect">
+						<img class="img-responsive" src="img/GheSofa4.jpg" alt="">
+						<div class="overlay">
+						   <h2>Ghế Sofa</h2>
+						   <a class="info" href="#">Chi tiết</a>
+						</div>
+					</div>
+                </div>
+                <div class="col-xs-6 col-md-4">
+                    <div class="hovereffect">
+						<img class="img-responsive" src="img/GheSofa5.jpg" alt="">
+						<div class="overlay">
+						   <h2>Ghế Sofa</h2>
+						   <a class="info" href="#">Chi tiết</a>
+						</div>
+					</div>
+                </div>
+                <div class="col-xs-6 col-md-4">
+                    <div class="hovereffect">
+						<img class="img-responsive" src="img/GheSofa6.jpg" alt="">
+						<div class="overlay">
+						   <h2>Ghế Sofa</h2>
+						   <a class="info" href="#">Chi tiết</a>
+						</div>
+					</div>
+                </div>
+				<div class="col-xs-6 col-md-4">
+                    <div class="hovereffect">
+						<img class="img-responsive" src="img/GheSofa7.jpg" alt="">
+						<div class="overlay">
+						   <h2>Ghế Sofa</h2>
+						   <a class="info" href="#">Chi tiết</a>
+						</div>
+					</div>
+                </div>
+                <div class="col-xs-6 col-md-4">
+                    <div class="hovereffect">
+						<img class="img-responsive" src="img/GheSofa8.jpg" alt="">
+						<div class="overlay">
+						   <h2>Ghế Sofa</h2>
+						   <a class="info" href="#">Chi tiết</a>
+						</div>
+					</div>
+                </div>
+                <div class="col-xs-6 col-md-4">
+                    <div class="hovereffect">
+						<img class="img-responsive" src="img/GheSofa9.jpg" alt="">
+						<div class="overlay">
+						   <h2>Ghế Sofa</h2>
+						   <a class="info" href="#">Chi tiết</a>
+						</div>
+					</div>
+                </div>
+				<div class="col-xs-6 col-md-4">
+                    <div class="hovereffect">
+						<img class="img-responsive" src="img/GheSofa10.jpg" alt="">
+						<div class="overlay">
+						   <h2>Ghế Sofa</h2>
+						   <a class="info" href="#">Chi tiết</a>
+						</div>
+					</div>
+                </div>
+                <div class="col-xs-6 col-md-4">
+                    <div class="hovereffect">
+						<img class="img-responsive" src="img/GheSofa11.jpg" alt="">
+						<div class="overlay">
+						   <h2>Ghế Sofa</h2>
+						   <a class="info" href="#">Chi tiết</a>
+						</div>
+					</div>
+                </div>
+                <div class="col-xs-6 col-md-4">
+                    <div class="hovereffect">
+						<img class="img-responsive" src="img/GheSofa12.jpg" alt="">
+						<div class="overlay">
+						   <h2>Ghế Sofa</h2>
+						   <a class="info" href="#">Chi tiết</a>
+						</div>
+					</div>
+                </div>
+				<div class="col-xs-6 col-md-4">
+                    <div class="hovereffect">
+						<img class="img-responsive" src="img/GheSofa13.jpg" alt="">
+						<div class="overlay">
+						   <h2>Ghế Sofa</h2>
+						   <a class="info" href="#">Chi tiết</a>
+						</div>
+					</div>
+                </div>
+                <div class="col-xs-6 col-md-4">
+                    <div class="hovereffect">
+						<img class="img-responsive" src="img/GheSofa14.jpg" alt="">
+						<div class="overlay">
+						   <h2>Ghế Sofa</h2>
+						   <a class="info" href="#">Chi tiết</a>
+						</div>
+					</div>
+                </div>
+                <div class="col-xs-6 col-md-4">
+                    <div class="hovereffect">
+						<img class="img-responsive" src="img/GheSofa15.jpg" alt="">
+						<div class="overlay">
+						   <h2>Ghế Sofa</h2>
+						   <a class="info" href="#">Chi tiết</a>
+						</div>
+					</div>
+                </div>
+				<div class="col-xs-6 col-md-4">
+                    <div class="hovereffect">
+						<img class="img-responsive" src="img/GheSofa10.jpg" alt="">
+						<div class="overlay">
+						   <h2>Ghế Sofa</h2>
+						   <a class="info" href="#">Chi tiết</a>
+						</div>
+					</div>
+                </div>
+                <div class="col-xs-6 col-md-4">
+                    <div class="hovereffect">
+						<img class="img-responsive" src="img/GheSofa2.jpg" alt="">
+						<div class="overlay">
+						   <h2>Ghế Sofa</h2>
+						   <a class="info" href="#">Chi tiết</a>
+						</div>
+					</div>
+                </div>
+                <div class="col-xs-6 col-md-4">
+                    <div class="hovereffect">
+						<img class="img-responsive" src="img/GheSofa5.jpg" alt="">
+						<div class="overlay">
+						   <h2>Ghế Sofa</h2>
+						   <a class="info" href="#">Chi tiết</a>
+						</div>
+					</div>
+                </div>
+                <div id="choosepage" >
+                   <ul class="pagination">
+                       <li onclick="this.classList.add('active');"><a href="#">1</a></li>
+                       <li onclick="this.classList.add('active');"><a href="#">2</a></li>
+                       <li onclick="this.classList.add('active');"><a href="#">3</a></li>
+                       <li onclick="this.classList.add('active');"><a href="#">4</a></li>
+                       <li onclick="this.classList.add('active');"><a href="#">5</a></li>
+                       <li onclick="this.classList.add('active');"><a href="#">></a></li>
+                   </ul>
+                </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="panel-footer">
+    <div class="row">
+      <div class="col-md-4">
+        <p style="text-align:left;margin:0;">Kuls</p>
+      </div>
+      <div class="col-md-4">
+        <p style="text-align:center;margin:0;">Copyright 2016</p>
+      </div>
+      <div class="col-md-4">
+        <p style="text-align:right;margin:0;">BKSoft 2016</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

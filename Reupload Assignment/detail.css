@@ -1,0 +1,53 @@
+.image{
+
+	width: 100%;
+	height: auto;
+}
+.row{
+	margin-top: 10px;
+}
+#namePro{
+	color: blue;
+}
+#muasp{
+	background-color: #204d74;
+}
+
+#image_sp{
+	margin-top: 10px;
+}
+
+#header_sp{
+	padding-bottom: 10px;
+	border-bottom: 3px solid rgb(210,210,210);
+}
+
+#detail{
+	padding-bottom: 10px;
+	border-bottom: 3px solid rgb(210,210,210);
+}
+
+#detail table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+#detail th, td {
+    padding: 15px;
+}
+
+#namePro{
+	margin: 0px;
+}
+
+@media screen and (min-width: 768px){
+	#image_sp{
+		margin-top: 40px;
+	}
+}
+
+@media screen and (min-width: 1024px){
+	#image_sp{
+		margin-top: 0px;
+	}
+	
+}
