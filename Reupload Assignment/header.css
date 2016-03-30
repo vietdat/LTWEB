@@ -1,6 +1,6 @@
 
 .address{
-  background-color: #308FCB;
+  background-image: url(img/go.jpg);
   width: 100%;
   z-index: 200;
   top:0;
@@ -42,9 +42,10 @@
 .signin{
   line-height: 50px;
   float: right;
+
 }
 #Sign{
-  background-color: #308FCB;
+  background-image: url(img/go.jpg);
   color: white;
   font-family: time;
   margin-right: 10px;
@@ -53,8 +54,13 @@
   margin-top: 20px;
 }
 #navi a{
-  color: #FFC800;
+  font-family: serif;
+  font-style: italic;
+  color: #222;
   font-weight: bolder;
+}
+#navi {
+	display: none;
 }
 @media screen and (min-width: 1024px){
   #sear{
@@ -64,5 +70,8 @@
   }
   .categlory{
     display: none;
+  }
+  #navi {
+	display: block;
   }
 }
