@@ -1,8 +1,10 @@
-.nav{
+.left_menu{
 	display: none;
+	padding-left:0;
+	margin-left: 0;
 }
 
-.nav li{
+.left_menu li{
 	list-style-type: none;
 }
 
@@ -26,27 +28,67 @@ button{
 .hovereffect {
 	margin: 3px;
 }
+#categlog_name {
+	font-family: 'Architects Daughter', cursive;
+	font-size: 2em;
+	 color: #994d00;
+	 font-weight: bold;
+	 margin-left: 10px;
+}
+h4 {
+	font-family: 'Passion One', cursive;
+	font-weight: bold;
+}
+.menu_res {
+	display: none;
+}
+
 
 @media screen and (min-width: 480px) {
-	.nav{
+	.left_menu{
 		display: block;
 		margin-left: 10px;
 	}
-	.nav a{
+	.left_menu a{
 			color: black;
 		display: block;
 		text-decoration: none;
 	}
 
-	.nav li{
+	.left_menu li{
 			width: auto;
 			line-height: 40px;
 			border-bottom: 1px solid #e8e8e8;
 		  	padding: 0 1em;
 	}
-	.nav li:hover{
+	.left_menu li:hover{
 		background: #F2F2F2;
 	}
-
+	
 
 }
+@media screen and (max-width: 992px) {
+	.nav {
+		display: none;
+	}
+	.menu_res {
+	display: block;
+}
+	.panel-group {
+		margin: 0;
+		background-image: url(img/material_background.jpg); 
+	}
+	.panel-heading {
+		background-image: url(img/material_background.jpg); 
+	}
+	.panel-heading  .name_collape {
+		color: white;
+	}
+	.page-header {
+		margin-bottom:0;
+	}
+	.container {
+		margin: 0 auto;
+	}
+}
+

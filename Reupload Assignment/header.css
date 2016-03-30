@@ -53,25 +53,54 @@
 #sear{
   margin-top: 20px;
 }
+
+
 #navi a{
   font-family: serif;
   font-style: italic;
-  color: #222;
+  color: #ff9933;
   font-weight: bolder;
+  font-size: 1.3em;
 }
 #navi {
 	display: none;
 }
 @media screen and (min-width: 1024px){
-  #sear{
+  #searr{
     float: right;
     width: 45%;
     margin-right: 30px;
+	margin-top:7px;
+	width: 30%;
+	
+  }
+   #sear{
+    float: right;
+    width: 45%;
+    margin-right: 30px;
+	display: none;
   }
   .categlory{
     display: none;
   }
   #navi {
 	display: block;
+	margin-top: 50px;
   }
 }
+@media screen and (min-width: 768px){
+	#searr {
+		width: 33%;
+		float:right;
+		margin-top: 6px;
+	}
+	#sear {
+		display: none;
+	}
+}
+@media screen and (max-width: 768px){
+	#searr {
+		display: none;
+	}
+}
+
