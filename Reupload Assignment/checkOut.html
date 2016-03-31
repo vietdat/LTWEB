@@ -11,7 +11,7 @@
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lobster">
   <link href="header.css" rel="stylesheet" type="text/css">
   <link href="footer.css" rel="stylesheet" type="text/css">
-  <link href="mainpage.css" rel="stylesheet" type="text/css">
+  <link href="checkOut.css" rel="stylesheet" type="text/css">
   <link href="sidenav.css" rel="stylesheet" type="text/css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -86,8 +86,19 @@
     </script>
   </div>
   <div class="container">
+    <div class="row">
+    <div class="col-xs-8">
+    <h2>Điều khoản</h2>
+    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+      Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage,
+      and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus
+       Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance.
+       The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
+The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also
+ reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
     <h2>Tiến hành đặt hàng</h2>
-    <a href="#giohang" class="btn btn-info" data-toggle="collapse">Kiểm tra giỏ hàng</a><br><br>
+    <a href="#giohang" class="btn btn-info gio" data-toggle="collapse">Kiểm tra giỏ hàng</a><br><br>
     <div id="giohang" class="collapse">
       <br>
       <table>
@@ -114,7 +125,7 @@
       </table>
       <br><br>
     </div>
-    <a href="#thongtin" class="btn btn-info" data-toggle="collapse">Kiểm tra thông tin khách hàng</a>
+    <a href="#thongtin" class="btn btn-info gio" data-toggle="collapse">Kiểm tra thông tin khách hàng</a>
     <br>
     <div id="thongtin" class="collapse" >
       <br>
@@ -125,10 +136,32 @@
       </p>
     </div>
     <br>
-    <a href="#hinhthuc" class="btn btn-info" data-toggle="collapse">Hình thức thanh toán</a>
+    <a href="#hinhthuc" class="btn btn-info gio" data-toggle="collapse">Hình thức thanh toán</a>
     <div id="hinhthuc" class="collapse" >
       <br>
-
+      <form role="form">
+        <label class="radio-inline">
+          <input type="radio" name="optradio">Thanh toán COD
+        </label>
+        <label class="radio-inline">
+          <input type="radio" name="optradio">Thanh toán tại cửa hàng
+        </label>
+        <label class="radio-inline">
+          <input type="radio" name="optradio">Chuyển khoản ngân hàng
+        </label><br><br>
+        <input class="btn btn-primary" type="submit" value="Thanh toán">
+      </form>
+    </div>
+  </div>
+  <div class="col-xs-4"><img src="img/giaohang.png" width="300" height="300"></div>
+</div>
+  </div>
+  <div class="footer">
+    <p>TPHCM: 58 Hà Bá Tường, P.12, Tân Bình <br>
+      Điện thoại: 0169 3611 866<br>
+      Hotline:<br>
+      Email: kuls29071994@gmail.com<br>
+    </p>
   </div>
 </body>
 </html>
