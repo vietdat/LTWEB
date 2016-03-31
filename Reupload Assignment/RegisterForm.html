@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet" href="formpage.css" type="text/css">
+  <link rel="stylesheet" href="header.css" type="text/css">
+  <link rel="stylesheet" href="sidenav.css" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
@@ -15,6 +17,69 @@
       window.location = location;
     }
   </script>
+  <div class="page-header">
+    <div class="address">
+      <div class="sdt">
+        <p> Hotline: 1900 8256</p>
+      </div>
+      <div class="signin">
+        <button class="btn" id="Sign" onclick="linkTo('LoginForm.html')">Đăng nhập</button>
+      </div>
+	  <div class="input-group" id="searr">
+          <span class="input-group-addon">Tìm kiếm</span>
+          <input type="search" class="form-control" placeholder="Bạn muốn tìm những gì?">
+      </div>
+    </div>
+    <div class="row" id="go">
+      <div class="col-xs-12 col-sm-4" >
+        <div class="logo">DreamWorld</div>
+        <div class="slogan">MANG LẠI MÁI ẤM TUYỆT VỜI</div>
+      </div>
+      <div class="col-xs-12 col-sm-8">
+        <div class="input-group" id="sear">
+          <span class="input-group-addon">Tìm kiếm</span>
+          <input type="search" class="form-control" placeholder="Bạn muốn tìm những gì?">
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-8" id="navi">
+        <ul class="nav nav-tabs">
+          <li role="presentation" class="active"><a href="Mainpage.html">Trang chủ</a></li>
+          <li role="presentation"><a href="#">Mới nhất</a></li>
+          <li role="presentation"><a href="#">Khuyến mãi</a></li>
+          <li role="presentation" class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+              Sản phẩm </a>
+            <ul class="dropdown-menu">
+                <li role="presentation"><a href="#">Bàn</a></li>
+                <li role="presentation"><a href="#">Ghế</a></li>
+                <li role="presentation"><a href="#">Tủ</a></li>
+                <li role="presentation"><a href="#">Giường</a></li>
+            </ul>
+          </li>
+          <li role="presentation"><a href="#">Thanh lý</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+    </div>
+    <div class="categlory"><span class="glyphicon glyphicon-menu-hamburger" onclick="openNav()"></span> Danh mục</div>
+    <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";;
+      document.body.style.backgroundColor = "rgba(0,0,21,0.4)";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.body.style.backgroundColor = "white";
+    }
+    </script>
+  </div>
   <div class="container" id="register">
     <h2>Create an account</h2>
     <span>If you have account</span> <a href="LoginForm.html">Sign in Now!</a>

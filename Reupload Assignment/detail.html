@@ -6,9 +6,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <link rel="stylesheet" href="style.css" type="text/css">
+  <link rel="stylesheet" href="header.css" type="text/css">
+  <link rel="stylesheet" href="sidenav.css" type="text/css">
   <link rel="stylesheet" type="text/css" href="detail.css">
   <link rel="stylesheet" type="text/css" href="hover.css">
+  <link rel="stylesheet" type="text/css" href="footer.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
@@ -17,51 +19,69 @@
     function linkTo(location){
       window.location = location;
     }
-      var lastScrollTop = 0;
-      $(window).scroll(function(event){
-         var st = $(this).scrollTop();
-         if (st > lastScrollTop){
-           $(document).ready(function(){
-        $("#header").slideUp("fast");
-        });
-         } else {
-             $(document).ready(function(){
-        $("#header").slideDown("fast");
-        });
-         }
-         lastScrollTop = st;
-      });
   </script>
-
-
-
-  <div id="header" class="page-header">
-    <div class="logo">
-      <img id="logo" src="logo.png" alt="No Loading" width="50" height="50"><span style="font-weight:bold"> BKSOFT</span>
-      <div class="btn-group" style="float:right;margin-top:10px;" id="btngroup">
-         <button type="button" class="btn " data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-search"></span></button>
-         <button type="button" class="btn "><span class="glyphicon glyphicon-shopping-cart"></span> <span class="badge" style="font-size:5pt">0</span></button>
-         <button type="button" class="btn "><span class="glyphicon glyphicon-cog"></span></button>
-         <button type="button" class="btn " onclick="linkTo('LoginForm.html')">Sign in</button>
+  <div class="page-header">
+    <div class="address">
+      <div class="sdt">
+        <p> Hotline: 1900 8256</p>
+      </div>
+      <div class="signin">
+        <button class="btn" id="Sign" onclick="linkTo('checkOut.html')"><span class="glyphicon glyphicon-shopping-cart"></span></button>
+      </div>
+	  <div class="input-group" id="searr">
+          <span class="input-group-addon">Tìm kiếm</span>
+          <input type="search" class="form-control" placeholder="Bạn muốn tìm những gì?">
       </div>
     </div>
-    <ul class="navigation">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Rooms</a>
-          <ul>
-            <li><a href="#">Living Room</a></li>
-            <li><a href="#">Kitchen</a></li>
-            <li><a href="#">Bedroom</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Product</a>
-          <ul>
-            <li><a href="#">Living Room</a></li>
-            <li><a href="#">Kitchen</a></li>
-            <li><a href="#">Bedroom</a></li>
-          </ul>
-        </li>
-      </ul>
+    <div class="row" id="go">
+      <div class="col-xs-12 col-sm-4" >
+        <div class="logo">DreamWorld</div>
+        <div class="slogan">MANG LẠI MÁI ẤM TUYỆT VỜI</div>
+      </div>
+      <div class="col-xs-12 col-sm-8">
+        <div class="input-group" id="sear">
+          <span class="input-group-addon">Tìm kiếm</span>
+          <input type="search" class="form-control" placeholder="Bạn muốn tìm những gì?">
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-8" id="navi">
+        <ul class="nav nav-tabs">
+          <li role="presentation" class="active"><a href="#">Trang chủ</a></li>
+          <li role="presentation"><a href="#">Mới nhất</a></li>
+          <li role="presentation"><a href="#">Khuyến mãi</a></li>
+          <li role="presentation" class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+              Sản phẩm </a>
+            <ul class="dropdown-menu">
+                <li role="presentation"><a href="#">Bàn</a></li>
+                <li role="presentation"><a href="#">Ghế</a></li>
+                <li role="presentation"><a href="#">Tủ</a></li>
+                <li role="presentation"><a href="#">Giường</a></li>
+            </ul>
+          </li>
+          <li role="presentation"><a href="#">Thanh lý</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+    </div>
+    <div class="categlory"><span class="glyphicon glyphicon-menu-hamburger" onclick="openNav()"></span> Danh mục</div>
+    <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";;
+      document.body.style.backgroundColor = "rgba(0,0,21,0.4)";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.body.style.backgroundColor = "white";
+    }
+    </script>
   </div>
 
   <div class="container">
@@ -73,13 +93,13 @@
           <div class="col-xs-8">
             <h4 id="namePro">Sofa văn phòng Fami với thiết kế hiện đại, trẻ trung và cao cấp</h4>
             <h4> Giá : $10000</h4>
-          </div>  
+          </div>
           <div>
-              <p>- Mẫu Sofa văn phòng được thiết kế có kiểu dáng hiện đại, gồm có 1 sofa đôi và 1 sofa đơn. 
+              <p>- Mẫu Sofa văn phòng được thiết kế có kiểu dáng hiện đại, gồm có 1 sofa đôi và 1 sofa đơn.
 			  Bộ sofa văn phòng FM-107# có chất liệu da thật kết hợp giả da.</p>
 			  <p>- Bộ sofa có thiết kế trẻ trung, hiện đại và sang trọng hơn cho không gian văn phòng.</p>
           </div>
-          <button class="btn btn-primary" id="muasp">Mua sp</button>
+          <button class="btn btn-primary" id="muasp">Thêm vào giỏ</button>
       </div>
       <div class="col-md-6" id="image_sp">
            <br>
@@ -129,15 +149,15 @@
         <table>
 			<tr>
 				<td><p>Kích thước</p></td>
-				<td><p>2600x1600x900</p></td> 
+				<td><p>2600x1600x900</p></td>
 			  </tr>
 			  <tr>
 				<td><p>Chất liệu</p></td>
-				<td><p>Khung gỗ tự nhiên chống mối mọt, Muss D40 không xẹp, mặt ngồi vải nhập khẩu Indonesia, 2 bên tay ghế và tựa lưng bọc da CN Hàn Quốc</p></td> 
+				<td><p>Khung gỗ tự nhiên chống mối mọt, Muss D40 không xẹp, mặt ngồi vải nhập khẩu Indonesia, 2 bên tay ghế và tựa lưng bọc da CN Hàn Quốc</p></td>
 			  </tr>
 			  <tr>
 				<td><p>Bảo hành</p></td>
-				<td><p>Thời gian bảo hành sản phẩm 3 năm</p></td> 
+				<td><p>Thời gian bảo hành sản phẩm 3 năm</p></td>
 			  </tr>
 		</table>
       </div>
@@ -203,19 +223,12 @@
       </div>
 	  <br>
   </div>
-  <div class="panel-footer">
-    <div class="row">
-      <div class="col-md-4">
-        <p style="text-align:left;margin:0;">Kuls</p>
-      </div>
-      <div class="col-md-4">
-        <p style="text-align:center;margin:0;">Copyright 2016</p>
-      </div>
-      <div class="col-md-4">
-        <p style="text-align:right;margin:0;">BKSoft 2016</p>
-      </div>
-    </div>
+  <div class="footer">
+    <p>TPHCM: 58 Hà Bá Tường, P.12, Tân Bình <br>
+      Điện thoại: 0169 3611 866<br>
+      Hotline:<br>
+      Email: kuls29071994@gmail.com<br>
+    </p>
   </div>
-
 </body>
 </html>

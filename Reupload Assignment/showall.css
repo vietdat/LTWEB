@@ -6,8 +6,12 @@
 
 .left_menu li{
 	list-style-type: none;
+	font-family: cursive;
+	font-size: 1.1em;
 }
-
+.left_menu li a:hover{
+	color: #FFC800;
+}
 .image{
 	width : 100%;
 	height: auto;
@@ -64,7 +68,7 @@ h4 {
 	.left_menu li:hover{
 		background: #F2F2F2;
 	}
-	
+
 
 }
 @media screen and (max-width: 992px) {
@@ -76,10 +80,10 @@ h4 {
 }
 	.panel-group {
 		margin: 0;
-		background-image: url(img/material_background.jpg); 
+		background-image: url(img/material_background.jpg);
 	}
 	.panel-heading {
-		background-image: url(img/material_background.jpg); 
+		background-image: url(img/material_background.jpg);
 	}
 	.panel-heading  .name_collape {
 		color: white;
@@ -91,4 +95,3 @@ h4 {
 		margin: 0 auto;
 	}
 }
-

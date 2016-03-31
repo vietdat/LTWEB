@@ -25,7 +25,7 @@
         <p> Hotline: 1900 8256</p>
       </div>
       <div class="signin">
-        <button class="btn" id="Sign">Đăng nhập</button>
+        <button class="btn" id="Sign" onclick="linkTo('LoginForm.html')">Đăng nhập</button>
       </div>
 	  <div class="input-group" id="searr">
           <span class="input-group-addon">Tìm kiếm</span>
@@ -45,39 +45,23 @@
       </div>
       <div class="col-xs-12 col-sm-8" id="navi">
         <ul class="nav nav-tabs">
-          <li role="presentation" class="active"><a href="#">Home</a></li>
-          <li role="presentation"><a href="#">Profile</a></li>
-          <li role="presentation"><a href="#">Messages</a></li>
+          <li role="presentation" class="active"><a href="Mainpage.html">Trang chủ</a></li>
+          <li role="presentation"><a href="#">Mới nhất</a></li>
+          <li role="presentation"><a href="#">Khuyến mãi</a></li>
           <li role="presentation" class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-              Dropdown </a>
+              Sản phẩm </a>
             <ul class="dropdown-menu">
-                <li role="presentation"><a href="#">Messages</a></li>
-                <li role="presentation"><a href="#">Messages</a></li>
+                <li role="presentation"><a href="#">Bàn</a></li>
+                <li role="presentation"><a href="#">Ghế</a></li>
+                <li role="presentation"><a href="#">Tủ</a></li>
+                <li role="presentation"><a href="#">Giường</a></li>
             </ul>
           </li>
+          <li role="presentation"><a href="#">Thanh lý</a></li>
         </ul>
       </div>
     </div>
-    <nav class="w3-sidenav w3-dark-grey w3-animate-left" id="side_nav" style="display:none">
-      <a href="javascript:void(0)" onclick="w3_close()"
-      class="w3-closenav w3-large">Close ×</a>
-      <a href="#">New Product</a>
-      <a href="#">Top Product</a>
-      <a href="#">Room</a>
-      <a href="#">Sale</a>
-      <a href="#">Recoment</a>
-    </nav>
-    <div class="categlory"><span class="glyphicon glyphicon-menu-hamburger" onclick="w3_open()"></span>
-	</div>
-    <script>
-      function w3_open() {
-          document.getElementsByClassName("w3-sidenav")[0].style.display = "block";
-      }
-      function w3_close() {
-          document.getElementsByClassName("w3-sidenav")[0].style.display = "none";
-      }
-    </script>
   </div>
   <div class="menu_res">
 	<div class="panel-group">
@@ -89,10 +73,10 @@
       </div>
       <div id="collapse1" class="panel-collapse collapse">
         <ul class="list-group">
-         <a href="#"><li class="list-group-item">Phòng khách</li></a>
-         <a href="#"><li class="list-group-item">Phòng tắm</li></a>
-         <a href="#"><li class="list-group-item">Nhà bếp</li></a>
-		 <a href="#"><li class="list-group-item">Phòng ngủ</li></a>
+         <li class="list-group-item"><a href="#">Phòng khách</a></li>
+         <li class="list-group-item"><a href="#">Phòng tắm</a></li>
+         <li class="list-group-item"><a href="#">Phòng bếp</a></li>
+         <li class="list-group-item"><a href="#">Phòng ngủ</a></li>
         </ul>
       </div>
     </div>
@@ -106,17 +90,19 @@
       </div>
       <div id="collapse2" class="panel-collapse collapse">
         <ul class="list-group">
-          <a href="#"><li class="list-group-item">Bàn</li></a>
-          <a href="#"><li class="list-group-item">Ghế</li></a>
-          <a href="#"><li class="list-group-item">Giường</li></a>
-		  <a href="#"><li class="list-group-item">Tủ</li></a>
+          <li class="list-group-item"><a href="#">Bàn</a></li>
+          <li class="list-group-item"><a href="#">Ghế</a></li>
+          <li class="list-group-item"><a href="#">Tủ</a></li>
+		      <li class="list-group-item"><a href="#">Giường</a></li>
         </ul>
         <div class="panel-footer">Footer</div>
       </div>
     </div>
   </div>
   </div>
-
+  <div class="col-xs-12 col-sm-6 col-md-2" style="float:right">
+    <img src="img/quangcao.jpg" alt="Noloading">
+  </div>
   <div class="container row">
       <div class="modal fade" id="myModal" role="dialog">
       <div class="modal-dialog">
@@ -154,7 +140,7 @@
       <div class="col-md-10 row">
             <h2 id = "categlog_name">Phòng khách</h2>
             <div>
-              <div class="col-xs-6 col-md-4">
+              <div class="col-xs-12 col-sm-6 col-md-4">
                     <div class="hovereffect">
 						<img class="img-responsive" src="img/GheSofa.jpg" alt="">
 						<div class="overlay">
@@ -163,7 +149,7 @@
 						</div>
 					</div>
                 </div>
-                <div class="col-xs-6 col-md-4">
+                <div class="col-xs-12 col-sm-6 col-md-4">
                     <div class="hovereffect">
 						<img class="img-responsive" src="img/GheSofa2.jpg" alt="">
 						<div class="overlay">
@@ -172,7 +158,7 @@
 						</div>
 					</div>
                 </div>
-                <div class="col-xs-6 col-md-4">
+                <div class="col-xs-12 col-sm-6 col-md-4">
                     <div class="hovereffect">
 						<img class="img-responsive" src="img/GheSofa3.jpg" alt="">
 						<div class="overlay">
@@ -181,7 +167,7 @@
 						</div>
 					</div>
                 </div>
-                <div class="col-xs-6 col-md-4">
+                <div class="col-xs-12 col-sm-6 col-md-4">
                     <div class="hovereffect">
 						<img class="img-responsive" src="img/GheSofa4.jpg" alt="">
 						<div class="overlay">
@@ -190,7 +176,7 @@
 						</div>
 					</div>
                 </div>
-                <div class="col-xs-6 col-md-4">
+                <div class="col-xs-12 col-sm-6 col-md-4">
                     <div class="hovereffect">
 						<img class="img-responsive" src="img/GheSofa5.jpg" alt="">
 						<div class="overlay">
@@ -199,7 +185,7 @@
 						</div>
 					</div>
                 </div>
-                <div class="col-xs-6 col-md-4">
+                <div class="col-xs-12 col-sm-6 col-md-4">
                     <div class="hovereffect">
 						<img class="img-responsive" src="img/GheSofa6.jpg" alt="">
 						<div class="overlay">
@@ -208,7 +194,7 @@
 						</div>
 					</div>
                 </div>
-				<div class="col-xs-6 col-md-4">
+				<div class="col-xs-12 col-sm-6 col-md-4">
                     <div class="hovereffect">
 						<img class="img-responsive" src="img/GheSofa7.jpg" alt="">
 						<div class="overlay">
@@ -217,7 +203,7 @@
 						</div>
 					</div>
                 </div>
-                <div class="col-xs-6 col-md-4">
+                <div class="col-xs-12 col-sm-6 col-md-4">
                     <div class="hovereffect">
 						<img class="img-responsive" src="img/GheSofa8.jpg" alt="">
 						<div class="overlay">
@@ -226,7 +212,7 @@
 						</div>
 					</div>
                 </div>
-                <div class="col-xs-6 col-md-4">
+                <div class="col-xs-12 col-sm-6 col-md-4">
                     <div class="hovereffect">
 						<img class="img-responsive" src="img/GheSofa9.jpg" alt="">
 						<div class="overlay">
@@ -235,7 +221,7 @@
 						</div>
 					</div>
                 </div>
-				<div class="col-xs-6 col-md-4">
+				<div class="col-xs-12 col-sm-6 col-md-4">
                     <div class="hovereffect">
 						<img class="img-responsive" src="img/GheSofa10.jpg" alt="">
 						<div class="overlay">
@@ -244,7 +230,7 @@
 						</div>
 					</div>
                 </div>
-                <div class="col-xs-6 col-md-4">
+                <div class="col-xs-12 col-sm-6 col-md-4">
                     <div class="hovereffect">
 						<img class="img-responsive" src="img/GheSofa11.jpg" alt="">
 						<div class="overlay">
@@ -253,7 +239,7 @@
 						</div>
 					</div>
                 </div>
-                <div class="col-xs-6 col-md-4">
+                <div class="col-xs-12 col-sm-6 col-md-4">
                     <div class="hovereffect">
 						<img class="img-responsive" src="img/GheSofa12.jpg" alt="">
 						<div class="overlay">
@@ -262,7 +248,7 @@
 						</div>
 					</div>
                 </div>
-				<div class="col-xs-6 col-md-4">
+				<div class="col-xs-12 col-sm-6 col-md-4">
                     <div class="hovereffect">
 						<img class="img-responsive" src="img/GheSofa13.jpg" alt="">
 						<div class="overlay">
@@ -271,7 +257,7 @@
 						</div>
 					</div>
                 </div>
-                <div class="col-xs-6 col-md-4">
+                <div class="col-xs-12 col-sm-6 col-md-4">
                     <div class="hovereffect">
 						<img class="img-responsive" src="img/GheSofa14.jpg" alt="">
 						<div class="overlay">
@@ -280,7 +266,7 @@
 						</div>
 					</div>
                 </div>
-                <div class="col-xs-6 col-md-4">
+                <div class="col-xs-12 col-sm-6 col-md-4">
                     <div class="hovereffect">
 						<img class="img-responsive" src="img/GheSofa15.jpg" alt="">
 						<div class="overlay">
@@ -289,7 +275,7 @@
 						</div>
 					</div>
                 </div>
-				<div class="col-xs-6 col-md-4">
+				<div class="col-xs-12 col-sm-6 col-md-4">
                     <div class="hovereffect">
 						<img class="img-responsive" src="img/GheSofa10.jpg" alt="">
 						<div class="overlay">
@@ -298,7 +284,7 @@
 						</div>
 					</div>
                 </div>
-                <div class="col-xs-6 col-md-4">
+                <div class="col-xs-12 col-sm-6 col-md-4">
                     <div class="hovereffect">
 						<img class="img-responsive" src="img/GheSofa2.jpg" alt="">
 						<div class="overlay">
@@ -307,7 +293,7 @@
 						</div>
 					</div>
                 </div>
-                <div class="col-xs-6 col-md-4">
+                <div class="col-xs-12 col-sm-6 col-md-4">
                     <div class="hovereffect">
 						<img class="img-responsive" src="img/GheSofa5.jpg" alt="">
 						<div class="overlay">
