@@ -1,0 +1,167 @@
+<!doctype html>
+<head>
+  <title>CheckOut</title>
+  <meta charset="utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Tangerine">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lobster">
+  <link href="header.css" rel="stylesheet" type="text/css">
+  <link href="footer.css" rel="stylesheet" type="text/css">
+  <link href="checkOut.css" rel="stylesheet" type="text/css">
+  <link href="sidenav.css" rel="stylesheet" type="text/css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+  <script>
+  function linkTo(location){
+    window.location = location;
+  }
+  </script>
+  <div class="page-header">
+    <div class="address">
+      <div class="sdt">
+        <p> Hotline: 1900 8256</p>
+      </div>
+      <div class="signin">
+        <button class="btn" id="Sign" onclick="linkTo('LoginForm.html')">Đăng nhập</button>
+      </div>
+	  <div class="input-group" id="searr">
+          <span class="input-group-addon">Tìm kiếm</span>
+          <input type="search" class="form-control" placeholder="Bạn muốn tìm những gì?">
+      </div>
+    </div>
+    <div class="row" id="go">
+      <div class="col-xs-12 col-sm-4" >
+        <div class="logo">DreamWorld</div>
+        <div class="slogan">MANG LẠI MÁI ẤM TUYỆT VỜI</div>
+      </div>
+      <div class="col-xs-12 col-sm-8">
+        <div class="input-group" id="sear">
+          <span class="input-group-addon">Tìm kiếm</span>
+          <input type="search" class="form-control" placeholder="Bạn muốn tìm những gì?">
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-8" id="navi">
+        <ul class="nav nav-tabs">
+          <li role="presentation" class="active"><a href="#">Trang chủ</a></li>
+          <li role="presentation"><a href="#">Mới nhất</a></li>
+          <li role="presentation"><a href="#">Khuyến mãi</a></li>
+          <li role="presentation" class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+              Sản phẩm </a>
+            <ul class="dropdown-menu">
+                <li role="presentation"><a href="#">Bàn</a></li>
+                <li role="presentation"><a href="#">Ghế</a></li>
+                <li role="presentation"><a href="#">Tủ</a></li>
+                <li role="presentation"><a href="#">Giường</a></li>
+            </ul>
+          </li>
+          <li role="presentation"><a href="#">Thanh lý</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+    </div>
+    <div class="categlory"><span class="glyphicon glyphicon-menu-hamburger" onclick="openNav()"></span> Danh mục</div>
+    <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";;
+      document.body.style.backgroundColor = "rgba(0,0,21,0.4)";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.body.style.backgroundColor = "white";
+    }
+    </script>
+  </div>
+  <div class="container">
+    <div class="row">
+    <div class="col-xs-8">
+    <h2>Điều khoản</h2>
+    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+      Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage,
+      and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus
+       Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance.
+       The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
+The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also
+ reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+    <h2>Tiến hành đặt hàng</h2>
+    <a href="#giohang" class="btn btn-info gio" data-toggle="collapse">Kiểm tra giỏ hàng</a><br><br>
+    <div id="giohang" class="collapse">
+      <br>
+      <table>
+        <tr>
+          <th>Sản phẩm</th>
+          <th>Số lượng</th>
+          <th>Thành tiền</th>
+        </tr>
+        <tr>
+          <td><img src="img/room1.jpg" alt="Noload" width="80" height="80" class="img-circle"></td>
+          <td><input class="input" type="number" placeholder="Số lượng"></td>
+          <td>150.000$</td>
+        </tr>
+        <tr>
+          <td><img src="img/room2.jpg" alt="Noload" width="80" height="80" class="img-circle"></td>
+          <td><input class="input" type="number" placeholder="Số lượng"></td>
+          <td>150.000$</td><br>
+        </tr>
+        <tr>
+          <td><img src="img/room3.jpg" alt="Noload" width="80" height="80" class="img-circle"></td>
+          <td><input class="input" type="number" placeholder="Số lượng"></td>
+          <td>150.000$</td>
+        </tr>
+      </table>
+      <br><br>
+    </div>
+    <a href="#thongtin" class="btn btn-info gio" data-toggle="collapse">Kiểm tra thông tin khách hàng</a>
+    <br>
+    <div id="thongtin" class="collapse" >
+      <br>
+      <p>TPHCM: 58 Hà Bá Tường, P.12, Tân Bình <br>
+        Điện thoại: 0169 3611 866<br>
+        Hotline:<br>
+        Email: kuls29071994@gmail.com<br>
+      </p>
+    </div>
+    <br>
+    <a href="#hinhthuc" class="btn btn-info gio" data-toggle="collapse">Hình thức thanh toán</a>
+    <div id="hinhthuc" class="collapse" >
+      <br>
+      <form role="form">
+        <label class="radio-inline">
+          <input type="radio" name="optradio">Thanh toán COD
+        </label>
+        <label class="radio-inline">
+          <input type="radio" name="optradio">Thanh toán tại cửa hàng
+        </label>
+        <label class="radio-inline">
+          <input type="radio" name="optradio">Chuyển khoản ngân hàng
+        </label><br><br>
+        <input class="btn btn-primary" type="submit" value="Thanh toán">
+      </form>
+    </div>
+  </div>
+  <div class="col-xs-4"><img src="img/giaohang.png" width="300" height="300"></div>
+</div>
+  </div>
+  <div class="footer">
+    <p>TPHCM: 58 Hà Bá Tường, P.12, Tân Bình <br>
+      Điện thoại: 0169 3611 866<br>
+      Hotline:<br>
+      Email: kuls29071994@gmail.com<br>
+    </p>
+  </div>
+</body>
+</html>
