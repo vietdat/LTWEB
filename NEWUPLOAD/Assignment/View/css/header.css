@@ -1,0 +1,117 @@
+
+.address{
+  background-image: url(../images/go.jpg);
+  width: 100%;
+  z-index: 200;
+  top:0;
+  position: fixed;
+  height: 50px;
+}
+#go{
+  background-image: url(../images/go.jpg);
+}
+.address p{
+  color: white;
+  line-height: 50px;
+  font-weight: bold;
+}
+.sdt{
+  float: left;
+  margin-left: 20px;
+}
+.logo{
+  color: #FFC800;
+  margin-top: 10px;
+  font-family: Playball,cursive;
+  font-weight: bold;
+  font-size: 2.5em;
+  text-align: center;
+}
+.slogan{
+  color: #FFC800;
+  text-align: center;
+}
+.categlory{
+  height: 35px;
+  background-color: #16497F;
+  color: white;
+  font-size: 1.2em;
+  line-height: 35px;
+  margin-top: 10px;
+}
+.signin{
+  line-height: 50px;
+  float: right;
+
+}
+#Sign{
+  background-image: url(../images/go.jpg);
+  color: white;
+  font-family: cursive;
+  margin-right: 15px;
+}
+#sear{
+  margin-top: 20px;
+}
+
+
+#navi a{
+  font-family: serif;
+  font-style: italic;
+  color: #ff9933;
+  font-weight: bolder;
+  font-size: 1.3em;
+}
+#navi {
+	display: none;
+}
+#menu_space {
+	display:inherit;
+}
+.menu {
+	display:inherit;
+}
+@media screen and (min-width: 1024px){
+  #searr{
+    float: right;
+    width: 45%;
+    margin-right: 30px;
+	margin-top:7px;
+	width: 30%;
+
+  }
+   #sear{
+    float: right;
+    width: 45%;
+    margin-right: 30px;
+	display: none;
+  }
+  .categlory{
+    display: none;
+  }
+  #navi {
+	display: block;
+	margin-top: 50px;
+  }
+  #menu_space {
+	display:none;
+}
+	.menu {
+	display:none;
+	}
+}
+@media screen and (min-width: 768px){
+	#searr {
+		width: 33%;
+		float:right;
+		margin-top: 6px;
+	}
+	#sear {
+		display: none;
+	}
+}
+@media screen and (max-width: 768px){
+	#searr {
+		display: none;
+	}
+}

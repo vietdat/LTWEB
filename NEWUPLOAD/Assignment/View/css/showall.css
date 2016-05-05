@@ -1,0 +1,104 @@
+.left_menu{
+	display: none;
+	padding-left:0;
+	margin-left: 0;
+}
+
+.left_menu li{
+	list-style-type: none;
+	font-family: cursive;
+	font-size: 1.1em;
+}
+.img-responsive{
+	width : 100%;
+	height: auto;
+}
+
+p{
+	margin: 0px;
+}
+
+button{
+	margin-bottom: 5px;
+}
+
+#choosepage{
+	float: right;
+}
+
+.hovereffect {
+	margin: 5px;
+}
+#categlog_name {
+	font-family: 'Architects Daughter', cursive;
+	font-size: 2em;
+	 color: #994d00;
+	 font-weight: bold;
+	 margin-left: 10px;
+}
+h4 {
+	font-family: 'Passion One', cursive;
+	font-weight: bold;
+}
+.menu_res {
+	display: none;
+}
+#left_col {
+	padding-left: 20px;
+}
+
+
+
+@media screen and (min-width: 480px) {
+	.left_menu{
+		display: block;
+		margin-left: 10px;
+	}
+	.left_menu a{
+			color: black;
+		display: block;
+		text-decoration: none;
+	}
+
+	.left_menu li{
+			width: auto;
+			line-height: 40px;
+			border-bottom: 1px solid #e8e8e8;
+		  	padding: 0 1em;
+	}
+	.left_menu li:hover{
+		background: #F2F2F2;
+	}
+	h4 {
+		margin-left: 10px;
+	}
+
+}
+@media screen and (max-width: 992px) {
+	.nav {
+		display: none;
+	}
+	.menu_res {
+	display: block;
+}
+	.panel-group {
+		margin: 0;
+		background-image: url(img/material_background.jpg); 
+	}
+	.panel-heading {
+		background-image: url(img/material_background.jpg); 
+	}
+	.panel-heading  .name_collape {
+		color: white;
+	}
+	.page-header {
+		margin-bottom:0;
+	}
+	.container {
+		margin: 0 auto;
+	}
+	.menu_res ul a {
+		text-decoration: none;
+	}
+
+
