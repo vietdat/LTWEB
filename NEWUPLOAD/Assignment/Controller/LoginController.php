@@ -6,8 +6,7 @@ if (isset($_POST['login'])){
   $password = $_POST['password'];
   $account = selectDataLoginFromDatabase($username, $password);
   if ($account!=null){
-    $_SESSION['UID'] = $account['UID'];
-    $_SESSION['Username'] = $account['Username'];
+    $_SESSION['Account'] = $account;
     header("Location: Homepage.php");
   }
   else{

@@ -1,6 +1,9 @@
-﻿<!doctype html>
+<?php session_start();
+  if (!isset($_SESSION['Account'])) header('Location: Login.php');
+?>
+<!doctype html>
 <head>
-  <title> SIGN IN</title>
+  <title> SIGN UP</title>
   <link rel="shortcut icon" href="logo.png"/>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,7 +12,7 @@
   <link rel="stylesheet" href="../View/css/header.css" type="text/css">
   <link href="../View/css/footer.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="../View/css/sidenav.css" type="text/css">
-  <link rel="stylesheet" href="../View/css/sidemenu.css" type="text/css">
+   <link rel="stylesheet" href="../View/css/sidemenu.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
@@ -24,7 +27,9 @@
       <div class="sdt">
         <p> Hotline: 1900 8256</p>
       </div>
-
+      <div class="signin">
+        <button class="btn" id="Sign" onclick="linkTo('info.php')"><?php echo $_SESSION['Account']['Username']?></button>
+      </div>
 	  <div class="input-group" id="searr">
           <span class="input-group-addon">Tìm kiếm</span>
           <input type="search" class="form-control" placeholder="Bạn muốn tìm những gì?">
@@ -43,7 +48,7 @@
       </div>
       <div class="col-xs-12 col-sm-8" id="navi">
        <ul class="nav nav-tabs">
-          <li role="presentation" class="active"><a href="Mainpage.html">Trang chủ</a></li>
+          <li role="presentation" class="active"><a href="Mainpage.php">Trang chủ</a></li>
           <li role="presentation"><a href="#">Mới nhất</a></li>
           <li role="presentation"><a href="#">Khuyến mãi</a></li>
           <li role="presentation" class="dropdown">
@@ -106,30 +111,56 @@
   <p>Menu</p>
   </div>
   </div>
+
   <div class="container">
     <div class="row">
-      <div class="col-sm-7">
-        <a href="../Controller/Signup.php"><img src="../View/images/sign.jpg" alt="No Loading" style="width:80%"></a>
+      <div class="col-xs-6">
+        <div class="infoheader">
+          <img src="../View/images/user.png" alt="Noloading" width="300"><br>
+          <a href="../Controller/LogoutController.php">LOG OUT </a>
+        </div>
       </div>
-      <div class="col-sm-5" id="colSignin">
-        <h2>Sign in!!</h2>
-        <p>BKSoft account <a href="#">What's this?</a></p>
-        <form method="post" action="../Controller/LoginController.php">
-          <div class="form-group">
-            <label for="urs">Username</label>
-            <input type="text" class="form-control" placeholder="Username or Email" id="urs" name="username">
-          </div>
-          <div class="form-group">
-            <label for="pwd">Password</label>
-            <input type="password" class="form-control" placeholder="Password" id="pwd" name="password">
-          </div>
-          <div class="checkbox">
-            <label><input type="checkbox" value="">Keep me Signed in</label>
-          </div>
-          <input type="submit" class="btn btn-primary" value="Sign in" name="login">
-        </form>
-        <p><a href="#">Can't access your account?</a></p>
-        <span id="Invite">Don't have a BKSoft account?</span> <a href="../Controller/Signup.php">Signup Now</a>
+      <div class="col-xs-6">
+        <div class="basicInfo">
+          <img src="../View/images/basicInfo.png" alt="Noloading" width="30"><a href="Profile.php"> Chỉnh sửa </a>
+          <h4>Thông tin cơ bản</h4>
+          <table>
+            <tr>
+              <td>Họ và tên: </td>
+              <td><?php echo $_SESSION['Account']['Fullname']?></td>
+            </tr>
+            <tr>
+              <td>Giới tính:</td>
+              <td><?php echo $_SESSION['Account']['Gender']?></td>
+            </tr>
+            <tr>
+              <td>Sinh nhật:</td>
+              <td><?php echo $_SESSION['Account']['Birthday']?></td>
+            </tr>
+            <tr>
+              <td>CMND:</td>
+              <td><?php echo $_SESSION['Account']['SNID']?></td>
+            </tr>
+          </table>
+        </div>
+        <div class="addInfo">
+          <img src="../View/images/lienhe.png" alt="Noloading" width="30">
+          <h4>Thông tin liên hệ</h4>
+          <table>
+            <tr>
+              <td>Điện thoại:</td>
+              <td><?php echo $_SESSION['Account']['Phone']?></td>
+            </tr>
+            <tr>
+              <td>Email:</td>
+              <td><?php echo $_SESSION['Account']['Email']?></td>
+            </tr>
+            <tr>
+              <td>Địa chỉ:</td>
+              <td><?php echo $_SESSION['Account']['Address']?></td>
+            </tr>
+          </table>
+        </div>
       </div>
     </div>
   </div>

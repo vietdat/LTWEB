@@ -31,9 +31,9 @@
       </div>
       <div class="signin">
           <?php
-            if (isset($_SESSION['Username'])){
+            if (isset($_SESSION['Account'])){
 
-              echo "<button class="."'btn'"."id="."'Sign'"."onclick="."'linkTo(\"info.php\")'".">".$_SESSION['Username']."</button>";
+              echo "<button class="."'btn'"."id="."'Sign'"."onclick="."'linkTo(\"../Controller/Info.php\")'".">".$_SESSION['Account']['Username']."</button>";
             }
             else{
               echo "<button class="."'btn'"."id="."'Sign'"."onclick="."'linkTo(\"../Controller/Login.php\")'".">"."Đăng nhập"."</button>";

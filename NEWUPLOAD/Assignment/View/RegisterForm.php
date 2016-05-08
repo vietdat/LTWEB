@@ -5,10 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <link rel="stylesheet" href="formpage.css" type="text/css">
-  <link rel="stylesheet" href="header.css" type="text/css">
-  <link rel="stylesheet" href="sidenav.css" type="text/css">
-   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../View/css/formpage.css" type="text/css">
+  <link rel="stylesheet" href="../View/css/header.css" type="text/css">
+  <link rel="stylesheet" href="../View/css/sidenav.css" type="text/css">
+   <link rel="stylesheet" href="../View/css/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
@@ -61,10 +61,6 @@
         </ul>
       </div>
     </div>
-
-
-
-	<input type="checkbox" id="menu" name="menu" class="menu-checkbox">
 	<div class="menu">
     <label class="menu-toggle" for="menu"><span>Toggle</span></label>
     <ul>
@@ -110,7 +106,7 @@
   <div class="container" id="register">
     <h2>Đăng ký tài khoản</h2>
     <span>Đã có tài khoản</span> <a href="LoginForm.html">Đăng nhập ngay</a>
-    <form method="post" action="result.php">
+    <form method="post" action="../Controller/SignupController.php">
       <div class="row">
         <div class="col-sm-6">
           <div class="form-group">
@@ -142,18 +138,18 @@
           <div class="form-group">
             <label for="mob">Tháng sinh</label>
             <select class="form-control" id="mob" name="mob">
-              <option>Jan</option>
-              <option>Feb</option>
-              <option>Mar</option>
-              <option>Apr</option>
-              <option>May</option>
-              <option>Jun</option>
-              <option>Jul</option>
-              <option>Aug</option>
-              <option>Sep</option>
-              <option>Oct</option>
-              <option>Nov</option>
-              <option>Dec</option>
+              <option>01</option>
+              <option>02</option>
+              <option>03</option>
+              <option>04</option>
+              <option>05</option>
+              <option>06</option>
+              <option>07</option>
+              <option>08</option>
+              <option>09</option>
+              <option>10</option>
+              <option>11</option>
+              <option>12</option>
             </select>
           </div>
         </div>
