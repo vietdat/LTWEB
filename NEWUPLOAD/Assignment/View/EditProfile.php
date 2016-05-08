@@ -3,7 +3,7 @@
 ?>
 <!doctype html>
 <head>
-  <title> SIGN UP</title>
+  <title> Change Info</title>
   <link rel="shortcut icon" href="logo.png"/>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">

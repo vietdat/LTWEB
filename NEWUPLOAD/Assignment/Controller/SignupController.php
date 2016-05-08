@@ -2,7 +2,6 @@
   $username = $_POST['username'];
   $snid = $_POST['snid'];
   $pass = $_POST['pass'];
-  $repass = $_POST['repass'];
   $email = $_POST['email'];
   $fullname = $_POST['fullname'];
   $dob = $_POST['dob'];
@@ -13,9 +12,14 @@
   $value = '\''.$username.'\''.','.'\''.$pass.'\''.','.'\''.$fullname.'\''.','.'\''.$snid.'\''.','.'\''.$email.'\''.','.'\''.$birthday.'\'';
   $insertData = insertDataAccount($value);
   if ($insertData){
-    echo "Đăng ký thành công";
+    echo "<a href='Login.php'>Đăng ký thành công. Click để về đăng nhập</a>";
   }
   else{
-    echo "Đăng ký không thành công";
+    include ('../View/RegisterForm.php');
+    echo "
+    <script>
+      alert('Đăng ký không thành công. Tài khoản hoặc email đã có người dùng')
+    </script>
+    ";
   }
 ?>

@@ -10,7 +10,12 @@ if (isset($_POST['login'])){
     header("Location: Homepage.php");
   }
   else{
-    header("Location: Login.php");
+    include ("../View/LoginForm.html");
+    echo "
+    <script>
+      alert('Sai tai khoan')
+    </script>
+    ";
   }
 }
 ?>

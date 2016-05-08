@@ -106,7 +106,7 @@
   <div class="container" id="register">
     <h2>Đăng ký tài khoản</h2>
     <span>Đã có tài khoản</span> <a href="LoginForm.html">Đăng nhập ngay</a>
-    <form method="post" action="../Controller/SignupController.php">
+    <form method="post" action="../Controller/SignupController.php" onsubmit="return validateForm()" name="myForm">
       <div class="row">
         <div class="col-sm-6">
           <div class="form-group">
@@ -183,10 +183,20 @@
         <input type="password" class="form-control" id="repwd" required="" name="repass">
       </div>
       <div class="checkbox">
-        <label><input type="checkbox" value="">Tôi đồng ý với các chính sách</label>
+        <label><input type="checkbox" value="" required="">Tôi đồng ý với các chính sách</label>
       </div>
       <input type="submit" class="btn btn-success" value="Sign up" id="btnsubmit">
     </form>
+    <script>
+      function validateForm() {
+          var x = document.forms["myForm"]["pass"].value;
+          var y = document.forms["myForm"]["repass"].value;
+          if(x!=y){
+              alert('Mật khẩu không trùng khớp');
+              return false;
+          }
+      }
+</script>
   </div>
 </body>
 </html>
